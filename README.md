@@ -1,2 +1,4 @@
 # Dylan-AI-DGv5
 A classification and regression model for predicting Gold prices
+ made of 3 xgboost base models performing regression tasks whose outputs are input features for an optimised metalearner whose primary task is classification into buy and sells using 500+ features but with feature selection the model finds the most suitable feature. employing Time series spilt i avoided future data leaking during testing after serveral testing and evalutions i found the optimized learning rate, estimators and max_depth needed, the best evaluation results after testing was on this parameters  entry_time,exit_time,direction,entry_price,exit_price,profit,is_win,tp_hit,sl_hit and 80% of the time it hit the tp the csv backtest results are available for review ,  it is recommended that the model is trained every 3 months ..... 
+
